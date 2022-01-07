@@ -9,7 +9,7 @@ export default function Home(props) {
     <div className="bg-gray-100 ">
       <Head>
         <title>Amazon</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://www.gfinityplc.com/wp-content/uploads/2020/08/amazon-logo-png.png" />
       </Head>
       {/* Header added below from the Header component */}
       <Header/>
