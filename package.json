@@ -8,7 +8,9 @@
   "dependencies": {
     "@heroicons/react": "^1.0.5",
     "@reduxjs/toolkit": "^1.7.1",
+    "@stripe/stripe-js": "^1.22.0",
     "@tailwindcss/line-clamp": "^0.3.0",
+    "axios": "^0.24.0",
     "firebase": "^9.6.2",
     "next": "latest",
     "next-auth": "^4.0.6",
@@ -20,7 +22,8 @@
     "react-redux": "^7.2.6",
     "react-responsive-carousel": "^3.2.22",
     "redux": "^4.1.2",
-    "redux-thunk": "^2.4.1"
+    "redux-thunk": "^2.4.1",
+    "stripe": "^8.196.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
