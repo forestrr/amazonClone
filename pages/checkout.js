@@ -3,13 +3,14 @@ import Image from "next/image"
 import { useSelector } from "react-redux"
 import CheckoutProduct from "../components/CheckoutProduct"
 import Header from "../components/Header"
-import { selectItems } from "../src/slices/basketSlices"
+import { selectItems, selectTotal } from "../src/slices/basketSlices"
 import Currency from 'react-currency-formatter'
 
 
 function Checkout() {
 
     const { data: session ,status} = useSession()
+    const total= useSelector(selectTotal)
     const items =useSelector(selectItems)
     return (
         <div className="bg-gray-100">
@@ -42,13 +43,13 @@ function Checkout() {
                     </div>
             </div>
             {/*Right*/}
-            <div>
+            <div className="flex flex-col bg-white p-10 shadow-md">
                 {items.length>0 && (
                     <div>
                         <h2 className="whitespace-nowrap "> subtotal({items.length}items):
                         <span>
                             <Currency
-                            // quantity={total}
+                            quantity={total}
                             currency="INR"/>
                             </span></h2>
                             <button disabled={!session} className={`button mt-2 ${!session && 'from gray-300 to-gray-500 border-gray-200 text-gray-300 cursor-not-allowed'}`}>
