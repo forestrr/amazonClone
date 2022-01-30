@@ -1,5 +1,5 @@
 # wanna see the amazon clone build with tailwind css and nextjs
-https://amazon-clone-kli62511i-forestrr.vercel.app/
+### https://amazon-clone-kli62511i-forestrr.vercel.app/
 
 
 # Next.js + Tailwind CSS Example
